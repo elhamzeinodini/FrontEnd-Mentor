@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  background-color: var(--cream);
+}
+
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --cream: hsl(27, 66%, 92%);
+  --dark-orange: hsl(33, 100%, 98%);
+  --white: #fff;
+  --gray: gray;
+  --mg-0-5: .5rem;
+  --mg-1: 1rem;
+  --mg-1-5: 1.5rem;
+  --mg-2: 2rem;
+  --font-family: "DM Sans", sans-serif;
+  --fw-700: 700;
+  --fw-400: 400;
+}
+
+.balance {
+  width: 100%;
+  background-color: var(--soft-red);
+  padding: var(--mg-1);
+  height: 5rem;
+  border-radius: var(--mg-0-5);
+  color: var(--white);
+  position: relative;
+}
+.balance__amount {
+  font-weight: var(--fw-700);
+  font-size: var(--mg-1-5);
+}
+.balance__title {
+  opacity: 85%;
+}
+.balance__svg {
+  position: absolute;
+  inset: var(--mg-1) var(--mg-1) auto auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 300px;
+  height: 550px;
+  margin: 6rem auto;
+}
+
+.expense {
+  background-color: var(--white);
+  width: 100%;
+  height: 700px;
+  margin-top: var(--mg-1);
+  border-radius: var(--mg-0-5);
+  padding: var(--mg-1);
+}
+.expense__title {
+  color: var(--dark-brown);
+}
+.expense__total {
+  position: relative;
+}
+.expense__total::before {
+  content: " ";
+  display: block;
+  border-bottom: 2px solid var(--cream);
+  margin: var(--mg-1) 0;
+}
+.expense__total__title {
+  color: var(--gray);
+  font-size: var(--mg-1);
+  margin-bottom: var(--mg-1);
+}
+.expense__total__amount {
+  margin-top: var(--mg-1);
+  font-size: var(--mg-1-5);
+  font-weight: var(--fw-700);
+  color: var(--dark-brown);
+}
+.expense__total__subtitle {
+  position: absolute;
+  inset: 3.5rem var(--mg-0-5) auto auto;
+  color: var(--gray);
+}
+.expense__total__subtitle span {
+  text-align: right;
+  display: block;
+  font-weight: var(--fw-700);
+  color: var(--dark-brown);
+}
+.expense__data {
+  margin: var(--mg-2) 0;
+  display: flex;
+  justify-content: space-around;
+  transform: rotate(180deg);
+}
+.expense__bars {
+  margin: 1rem 0;
+}
+.expense__bar {
+  background-color: var(--soft-red);
+  width: var(--mg-1-5);
+  border-radius: 0.2rem;
+  position: relative;
+}
+.expense__bar--active {
+  background-color: var(--cyan);
+}
+.expense__days {
+  margin: var(--mg-2) 0;
+  transform: rotate(180deg);
+}
+
+/*# sourceMappingURL=style.css.map */

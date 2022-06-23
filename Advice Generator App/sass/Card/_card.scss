@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    &__title {
+        color: var(--neon-green);
+        letter-spacing: .3rem;
+        font-size: .75rem;
+    }
+    &__text {
+        color: var(--light-cyan);
+        text-align: center;
+    }
+    &__svg {
+        &--lines {
+            fill: var(--light-cyan);
+            opacity: 60%;
+        }
+        margin-bottom: var(--mg-1);
+    }
+    &__btn {
+        all: unset;
+        padding: var(--mg-1);
+        border-radius: 50%;
+        background-color: var(--neon-green);
+        display: flex;
+        align-items: center;
+        position: absolute;
+        inset: auto auto -2rem auto;
+        cursor: pointer;
+    }
+}

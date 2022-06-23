@@ -1,0 +1,20 @@
+.balance {
+    width: 100%;
+    background-color: var(--soft-red);
+    padding: var(--mg-1);
+    height: 5rem;
+    border-radius: var(--mg-0-5);
+    color: var(--white);
+    position: relative;
+    &__amount {
+        font-weight: var(--fw-700);
+        font-size: var(--mg-1-5);
+    }
+    &__title {
+        opacity: 85%;
+    }
+    &__svg {
+        position: absolute;
+        inset: var(--mg-1) var(--mg-1) auto auto;
+    }
+}

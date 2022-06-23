@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+  --font-family: "Manrope", sans-serif;
+  --mg-1: 1rem;
+  --mg-2: 2rem;
+  --mg-1-5: 1.5rem;
+  --mg-0-5: .5rem;
+}
+
+.container {
+  background-color: var(--grayish-blue);
+  width: 350px;
+  height: 400px;
+  padding: var(--mg-1);
+  border-radius: var(--mg-0-5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 320px;
+  }
+}
+
+.container {
+  position: relative;
+}
+.container__title {
+  color: var(--neon-green);
+  letter-spacing: 0.3rem;
+  font-size: 0.75rem;
+}
+.container__text {
+  color: var(--light-cyan);
+  text-align: center;
+}
+.container__svg {
+  margin-bottom: var(--mg-1);
+}
+.container__svg--lines {
+  fill: var(--light-cyan);
+  opacity: 60%;
+}
+.container__btn {
+  all: unset;
+  padding: var(--mg-1);
+  border-radius: 50%;
+  background-color: var(--neon-green);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  inset: auto auto -2rem auto;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

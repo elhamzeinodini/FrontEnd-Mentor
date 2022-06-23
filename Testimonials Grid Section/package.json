@@ -1,0 +1,14 @@
+{
+    "name": "second",
+    "version": "1.0.0",
+    "description": "<h1>Previews: </h1> <img src=\"./Images/desktop-design.jpg\" alt=\"desktop preview\"/> <img src=\"./Images/mobile-design.jpg\" alt=\"mobile preview\"/>",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "sass": "^1.52.3"
+    }
+}

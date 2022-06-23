@@ -1,0 +1,8 @@
+.container {
+    @media screen and (min-width: 1000px) {
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

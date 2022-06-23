@@ -1,0 +1,64 @@
+.expense {
+    background-color: var(--white);
+    width: 100%;
+    height: 700px;
+    margin-top: var(--mg-1);
+    border-radius: var(--mg-0-5);
+    padding: var(--mg-1);
+    &__title {
+        color: var(--dark-brown);
+    }
+    &__total {
+        position: relative;
+        &::before {
+            content: " ";
+            display: block;
+            border-bottom: 2px solid var(--cream);
+            margin: var(--mg-1) 0;
+        }
+        &__title {
+            color: var(--gray);
+            font-size: var(--mg-1);
+            margin-bottom: var(--mg-1);
+        }
+        &__amount {
+            margin-top: var(--mg-1);
+            font-size: var(--mg-1-5);
+            font-weight: var(--fw-700);
+            color: var(--dark-brown);
+        }
+        &__subtitle {
+            position: absolute;
+            inset: 3.5rem var(--mg-0-5) auto auto;
+            color: var(--gray);
+            & span {
+                text-align: right;
+                display: block;
+                font-weight: var(--fw-700);
+                color: var(--dark-brown);
+            }
+        }
+    }
+    &__data {
+        margin: var(--mg-2) 0;
+        display: flex;
+        justify-content: space-around;
+        transform: rotate(180deg);
+    }
+    &__bars {
+        margin: 1rem 0;
+    }
+    &__bar {
+        background-color: var(--soft-red);
+        width: var(--mg-1-5);
+        border-radius: .2rem;
+        position: relative;
+        &--active {
+            background-color: var(--cyan);
+        }
+    }
+    &__days {
+        margin: var(--mg-2) 0;
+        transform: rotate(180deg);
+    }
+}

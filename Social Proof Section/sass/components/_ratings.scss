@@ -1,0 +1,19 @@
+.review {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 20rem;
+    margin-bottom: var(--mg-2);
+    &__box {
+        padding: var(--mg-1);
+        background-color: var(--ultraLight-purple);
+        border-radius: var(--mg-0-5);
+        width: 15rem;
+    }
+    &__stars {
+        color: var(--orange-color);
+        margin-bottom: var(--mg-1);
+        font-size: var(--mg-1);
+    }
+}

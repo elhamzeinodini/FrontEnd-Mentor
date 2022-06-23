@@ -1,0 +1,14 @@
+.container {
+    background-color: var(--grayish-blue);
+    width: 350px;
+    height: 400px;
+    padding: var(--mg-1);
+    border-radius: var(--mg-0-5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (max-width: 768px) {
+        width: 320px;
+    }
+}

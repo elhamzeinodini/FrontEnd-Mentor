@@ -1,0 +1,17 @@
+.hero {
+    &__title {
+        color: var(--purple-color);
+        font-size: var(--fs-900);
+        max-width: 15ch;
+        margin-inline: auto;
+        margin-bottom: var(--mg-2);
+        font-weight: 800;
+    }
+    &__subtitle {
+        opacity: 70%;
+        margin-bottom: var(--mg-2);
+        max-width: 30ch;
+        margin-inline: auto;
+        line-height: var(--mg-1);
+    }
+}

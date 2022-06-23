@@ -1,0 +1,8 @@
+@media screen and (min-width: 1000px) {
+    .container {
+        max-width: 1100px;
+        display: grid;
+        gap: var(--mg-1-5);
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

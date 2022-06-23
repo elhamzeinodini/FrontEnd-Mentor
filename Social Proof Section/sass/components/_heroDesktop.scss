@@ -1,0 +1,9 @@
+@media screen and (min-width: 1000px) {
+    .hero {
+        &__title,
+        &__subtitle {
+            text-align: left;
+            margin-left: 0;
+        }
+    }
+}
