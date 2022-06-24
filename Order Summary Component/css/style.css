@@ -63,6 +63,7 @@ body {
 .container__description {
   max-width: 30ch;
   text-align: center;
+  color: var(--medium-blue);
 }
 .container__plan {
   background-color: var(--light-blue);
