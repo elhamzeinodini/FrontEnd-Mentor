@@ -81,7 +81,7 @@ body {
 }
 .container__btn {
   all: unset;
-  margin-top: var(--mg-1);
+  margin-top: var(--mg-2);
   background-color: var(--dark-cyan);
   width: 100%;
   padding-block: 0.75rem;
