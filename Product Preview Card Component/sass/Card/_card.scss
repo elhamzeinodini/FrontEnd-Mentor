@@ -1,0 +1,57 @@
+.container {
+    width: 350px;
+    height: 700px;
+    border-radius: var(--mg-0-5);
+    background-color: var(--white);
+    margin-inline: auto;
+    &__img {
+        width: 100%;
+        border-top-left-radius: var(--mg-0-5);
+        border-top-right-radius: var(--mg-0-5);
+    }
+    &__content {
+        padding: var(--mg-1);
+    }
+    &__title {
+        letter-spacing: var(--mg-0-5);
+        color: gray;
+    }
+    &__brand {
+        font-family: var(--ff-secondary);
+        font-weight: var(--f500-weight);
+        font-size: var(--mg-2);
+        margin: var(--mg-1) 0;
+    }
+    &__description {
+        color: var(--gray);
+        line-height: var(--mg-2);
+        margin: var(--mg-1) 0;
+    }
+    &__price {
+        margin-top: var(--mg-2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        &__discount {
+            color: var(--dark-cyan);
+            font-size: var(--mg-2);
+            font-family: var(--ff-secondary);
+        }
+        &__before {
+            color: var(--gray);
+            text-decoration: line-through;
+        }
+    }
+    &__btn {
+        all: unset;
+        margin-top: var(--mg-1);
+        background-color: var(--dark-cyan);
+        width: 100%;
+        padding-block: .75rem;
+        cursor: pointer;
+        color: var(--white);
+        text-align: center;
+        border-radius: var(--mg-0-5);
+    }
+}

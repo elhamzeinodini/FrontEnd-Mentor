@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --gray: gray;
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "Fraunces", serif;
+  --mg-0-5: .5rem;
+  --mg-1-5: 1.5rem;
+  --mg-1: 1rem;
+  --mg-2: 2rem;
+  --f500-weight: 500;
+  --f700-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: var(--ff-primary);
+  padding: 3rem 0;
+  background-color: var(--cream);
+}
+
+.container {
+  width: 350px;
+  height: 700px;
+  border-radius: var(--mg-0-5);
+  background-color: var(--white);
+  margin-inline: auto;
+}
+.container__img {
+  width: 100%;
+  border-top-left-radius: var(--mg-0-5);
+  border-top-right-radius: var(--mg-0-5);
+}
+.container__content {
+  padding: var(--mg-1);
+}
+.container__title {
+  letter-spacing: var(--mg-0-5);
+  color: gray;
+}
+.container__brand {
+  font-family: var(--ff-secondary);
+  font-weight: var(--f500-weight);
+  font-size: var(--mg-2);
+  margin: var(--mg-1) 0;
+}
+.container__description {
+  color: var(--gray);
+  line-height: var(--mg-2);
+  margin: var(--mg-1) 0;
+}
+.container__price {
+  margin-top: var(--mg-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+.container__price__discount {
+  color: var(--dark-cyan);
+  font-size: var(--mg-2);
+  font-family: var(--ff-secondary);
+}
+.container__price__before {
+  color: var(--gray);
+  text-decoration: line-through;
+}
+.container__btn {
+  all: unset;
+  margin-top: var(--mg-1);
+  background-color: var(--dark-cyan);
+  width: 100%;
+  padding-block: 0.75rem;
+  cursor: pointer;
+  color: var(--white);
+  text-align: center;
+  border-radius: var(--mg-0-5);
+}
+
+/*# sourceMappingURL=style.css.map */
