@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+:root {
+  --white: #fff;
+  --grayish-white: #fefefe;
+  --bg: #f6f8ff;
+  --light-blue: #4b6a9b;
+  --dark-blue: #2b3442;
+  --steel-blue: #0079ff;
+  --sky-blue: #60abff;
+  --red: red;
+  --black: #000;
+  --font-family: "Space Mono", monospace;
+  --mg-1: 1rem;
+  --mg-1-5: 1.5rem;
+  --mg-2: 2rem;
+  --mg-0-5: .5rem;
+  --fw-700: 700;
+}

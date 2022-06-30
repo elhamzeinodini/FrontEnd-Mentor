@@ -1,0 +1,65 @@
+.container {
+    background-color: var(--white);
+    border-radius: var(--mg-1);
+    margin-block: var(--mg-1);
+    padding: var(--mg-2);
+    height: 450px;
+    &__profile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &__img {
+            & img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }
+        &__info {
+            &__name {
+                font-weight: var(--fw-700);
+                text-transform: uppercase;
+            }
+            &__id {
+                color: var(--steel-blue);
+            }
+            &__txt {
+                opacity: 50%;
+            }
+        }
+        &__date {
+            color: var(--dark-blue);
+            transform: translateY(-1.5rem);
+        }
+    }
+    &__num {
+        background-color: var(--bg);
+        width: 420px;
+        height: 100px;
+        border-radius: var(--mg-0-5);
+        padding: var(--mg-1);
+        margin: var(--mg-2) 0;
+        transform: translateX(15rem);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--mg-1);
+        &:nth-of-type(1),
+         :nth-of-type(2),
+         :nth-of-type(3) {
+            color: var(--dark-blue);
+        }
+    }
+    &__link {
+        transform: translateX(15rem);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 400px;
+        margin-left: .6rem;
+        gap: var(--mg-1-5);
+        & span {
+            color: var(--dark-blue);
+            display: inline-block;
+            transform: translateY(-.3rem);
+        }
+    }
+}

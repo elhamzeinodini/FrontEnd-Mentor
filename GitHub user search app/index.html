@@ -11,7 +11,64 @@
 </head>
 
 <body>
-
+    <nav class="nav">
+        <div class="nav__logo">
+            <a href="#" class="nav__logo__link">devfinder</a>
+        </div>
+        <div class="nav__theme">
+            <span class="nav__theme__status">DARK</span>
+            <img src="./assets/icon-moon.svg" alt="moon icon" class="nav__theme__icon" />
+        </div>
+    </nav>
+    <div class="search">
+        <div class="search__left">
+            <img src="./assets/icon-search.svg" alt="search icon" class="search__left__icon" />
+            <input type="search" placeholder="Search Github Username..." class="search__left__input" />
+        </div>
+        <div class="search__error">
+            <p class="search__error__msg">No Results</p>
+        </div>
+        <button class="search__btn">Search</button>
+    </div>
+    <div class="container">
+        <div class="container__profile">
+            <div class="container__profile__img">
+                <img src="./assets/avatar.png" alt="avatar" />
+            </div>
+            <div class="container__profile__info">
+                <h2 class="container__profile__info__name"></h2>
+                <span class="container__profile__info__id"></span>
+                <p class="container__profile__info__txt"></p>
+            </div>
+            <div class="container__profile__date"></div>
+        </div>
+        <div class="container__num">
+            <span class="container__num__name">Repos</span>
+            <span class="container__num__name">Followers</span>
+            <span class="container__num__name">Following</span>
+            <span class="container__num__no"></span>
+            <span class="container__num__no"></span>
+            <span class="container__num__no"></span>
+        </div>
+        <div class="container__link">
+            <div class="container__link__city">
+                <img src="./assets/icon-location.svg" alt="location">
+                <span></span>
+            </div>
+            <div class="container__link__github">
+                <img src="./assets/icon-website.svg" alt="website">
+                <span></span>
+            </div>
+            <div class="container__link__twitter">
+                <img src="./assets/icon-twitter.svg" alt="twitter">
+                <span></span>
+            </div>
+            <div class="container__link__id">
+                <img src="./assets/icon-company.svg" alt="id">
+                <span></span>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

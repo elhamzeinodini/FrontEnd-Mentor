@@ -1,0 +1,1 @@
+.nav{margin-block:var(--mg-1);display:flex;justify-content:space-between}.nav__logo{cursor:pointer}.nav__logo__link{color:var(--dark-blue);font-weight:700;font-size:var(--mg-1-5)}.nav__theme{display:flex;align-items:center}.nav__theme__status{margin-right:var(--mg-1-5);letter-spacing:.2rem;font-weight:400;color:var(--dark-blue)}.nav__theme__icon{cursor:pointer}
