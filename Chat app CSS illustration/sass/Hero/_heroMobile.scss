@@ -1,0 +1,128 @@
+.container {
+    @mixin icon-style {
+        color: var(--white);
+        font-size: var(--mg-1-5);
+        cursor: pointer;
+    }
+    @mixin chat($color, $bg-color) {
+        background-color: $bg-color;
+        color: $color;
+        padding: var(--mg-0-5);
+        border-radius: var(--mg-0-5) var(--mg-0-5) var(--mg-0-5) .1rem;
+        max-width: 25ch;
+        font-size: var(--mg-0-5);
+        margin: var(--mg-0-5);
+    }
+    &::before {
+        @media screen and (max-width: 768px) {
+            left: -15rem;
+            height: 100vh;
+        }
+    }
+    &__mobile {
+        background-color: var(--white);
+        width: 250px;
+        margin-inline: auto;
+        height: 600px;
+        border-radius: var(--mg-1);
+        transform: translateY(4rem);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding: var(--mg-0-5);
+        &__profile {
+            background-color: var(--moderate-violet);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 6rem;
+            border-radius: var(--mg-1) var(--mg-1) .2rem .2rem;
+            &::before {
+                content: "";
+                width: 55%;
+                background-color: var(--white);
+                height: 2rem;
+                position: absolute;
+                inset: 0 auto auto 3.5rem;
+                border-radius: 0 0 20px 20px;
+            }
+            &__left {
+                margin-top: var(--mg-1-5);
+                display: flex;
+                align-items: center;
+                & i {
+                    @include icon-style;
+                }
+                &__Info {
+                    color: var(--white);
+                    font-size: .8rem;
+                    &__status {
+                        opacity: 80%;
+                    }
+                }
+                &__avatar {
+                    width: var(--mg-2);
+                    height: var(--mg-2);
+                    border-radius: 50%;
+                    border: 1px solid var(--white);
+                    margin-right: var(--mg-0-5);
+                }
+            }
+            &__right {
+                margin-top: var(--mg-1-5);
+                & i {
+                    @include icon-style;
+                }
+            }
+        }
+        &__chat {
+            background-color: var(--grayish-blue);
+            display: flex;
+            flex-direction: column;
+            &__card {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(6) {
+                    @include chat(var(--moderate-violet), var(--app-bg))
+                }
+                &:nth-child(4),
+                &:nth-child(5) {
+                    @include chat(var(--black), var(--white));
+                    border-radius: var(--mg-0-5) var(--mg-0-5) .1rem var(--mg-0-5);
+                    align-self: flex-end;
+                }
+                &:nth-child(7),
+                &:nth-child(8) {
+                    @include chat(var(--white), var(--moderate-violet));
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & div {
+                        display: flex;
+                        align-items: center;
+                    }
+                    & span {
+                        width: var(--mg-0-5);
+                        height: var(--mg-0-5);
+                        border: 2px solid var(--white);
+                        opacity: 70%;
+                        border-radius: 50%;
+                        display: inline-block;
+                        margin-right: var(--mg-0-5);
+                    }
+                }
+            }
+            &__imgs {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin: var(--mg-0-5) .3rem;
+                gap: var(--mg-0-5);
+                & img {
+                    border-radius: .5rem;
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+        }
+    }
+}
