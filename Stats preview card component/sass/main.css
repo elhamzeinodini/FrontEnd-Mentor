@@ -16,3 +16,19 @@
   --mg-1-5: 1.5rem;
   --mg-2: 2rem;
 }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--bg);
+  padding: var(--mg-2);
+  color: white;
+}
