@@ -1,0 +1,33 @@
+@media screen and (min-width:1000px) {
+    .card {
+        width: 80%;
+        margin: 4rem auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        height: 60vh;
+        &__img {
+            width: 50%;
+            border-radius: 0 var(--mg-1) var(--mg-1) 0;
+        }
+        &__content {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__title {
+            max-width: 18ch;
+        }
+        &__description {
+            max-width: 40ch;
+            margin-left: var(--mg-2);
+        }
+        &__stat {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: var(--mg-2);
+            margin-inline: auto;
+        }
+    }
+}
