@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
   font-family: var(--ffamily);
   background-color: var(--main-bg);
+  padding: 4rem var(--mg-1);
 }
 
 :root {
@@ -19,10 +20,85 @@ body {
   --card-bg: hsl(216, 50%, 16%);
   --line: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
-  --fw-300:300;
-  --fw-400:400;
-  --fw-600:600;
-  --ffamily:"Outfit", sans-serif;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+  --ffamily: "Outfit", sans-serif;
+  --mg-0-5: .5rem;
+  --mg-1: 1rem;
+  --mg-1-5:1.5rem;
+  --mg-2: 2rem;
+}
+
+.card {
+  width: 300px;
+  background-color: var(--card-bg);
+  margin-inline: auto;
+  border-radius: var(--mg-0-5);
+}
+.card__content {
+  padding: var(--mg-2);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 600px;
+}
+.card__content__img {
+  width: 100%;
+  display: inline-block;
+  border-radius: var(--mg-0-5);
+}
+.card__content__title {
+  color: var(--white);
+}
+.card__content__subtitle {
+  color: var(--soft-blue);
+  line-height: var(--mg-1-5);
+}
+.card__content__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--soft-blue);
+  padding-bottom: var(--mg-2);
+}
+.card__content__price img {
+  margin-right: var(--mg-0-5);
+}
+.card__content__price__left {
+  display: flex;
+  align-items: center;
+}
+.card__content__price__left span {
+  color: var(--cyan);
+  font-weight: var(--fw-600);
+}
+.card__content__price__right {
+  display: flex;
+  align-items: center;
+}
+.card__content__price__right span {
+  color: var(--soft-blue);
+}
+.card__content__profile {
+  display: flex;
+  align-items: center;
+}
+.card__content__profile__img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  margin-right: var(--mg-1);
+}
+.card__content__profile__first {
+  color: var(--line);
+  font-weight: var(--fw-600);
+  display: inline-block;
+  margin-right: var(--mg-0-5);
+}
+.card__content__profile__sec {
+  color: var(--white);
 }
 
 /*# sourceMappingURL=style.css.map */

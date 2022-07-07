@@ -1,0 +1,82 @@
+.card {
+  width: 300px;
+  background-color: var(--card-bg);
+  margin-inline: auto;
+  border-radius: var(--mg-0-5);
+
+  &__content {
+    padding: var(--mg-2);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 600px;
+
+    &__img {
+      width: 100%;
+      display: inline-block;
+      border-radius: var(--mg-0-5);
+    }
+
+    &__title {
+      color: var(--white);
+    }
+
+    &__subtitle {
+      color: var(--soft-blue);
+      line-height: var(--mg-1-5);
+    }
+
+    &__price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--soft-blue);
+      padding-bottom: var(--mg-2);
+
+      & img {
+        margin-right: var(--mg-0-5);
+      }
+
+      &__left{
+        display: flex;
+        align-items: center;
+        & span{
+            color: var(--cyan);
+            font-weight: var(--fw-600);
+        }
+      }
+
+      &__right{
+        display: flex;
+        align-items: center;
+        & span{
+            color: var(--soft-blue);
+        }
+      }
+    }
+
+    &__profile {
+      display: flex;
+      align-items: center;
+
+      &__img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border: 2px solid var(--white);
+        margin-right: var(--mg-1);
+      }
+
+      &__first {
+        color: var(--line);
+        font-weight: var(--fw-600);
+        display: inline-block;
+        margin-right: var(--mg-0-5);
+      }
+
+      &__sec {
+        color: var(--white);
+      }
+    }
+  }
+}

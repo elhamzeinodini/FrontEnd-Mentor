@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,30 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>FrontEnd Mentor | NFT preview card component main</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="container__img"></div>
+    <div class="card">
+       <div class="card__content">
+            <img class="card__content__img" src='./images/image-equilibrium.jpg' alt="cube" />
+            <h2 class="card__content__title">Equilibrium #3429</h2>
+            <p class="card__content__subtitle">Our Equilibrium collection promotes balance and calm.</p>
+            <div class="card__content__price">
+                <div class="card__content__price__left">
+                    <img src="./images/icon-ethereum.svg" alt="ethereum">
+                    <span>0.041 ETH</span>
+                </div>
+                <div class="card__content__price__right">
+                    <img src="./images/icon-clock.svg" alt="clock">
+                    <span>3 days left</span>
+                </div>
+            </div>
+            <div class="card__content__profile"> 
+                <img src="./images/image-avatar.png" alt="avatar" class="card__content__profile__img">
+                <span class="card__content__profile__first">Creation of</span>
+                <span class="card__content__profile__sec">Jules Wyvern</span>
+            </div>
+       </div>
     </div>
 </body>
+
 </html>
