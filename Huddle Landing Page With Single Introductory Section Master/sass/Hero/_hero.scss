@@ -1,0 +1,25 @@
+.container{
+    background-color: var(--violet);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    color: var(--white);
+    padding: var(--mg-1-5);
+    &__logo{
+        display: flex;
+        align-items: center;
+        &__text{
+            font-family: var(--font-primary);
+            font-weight: var(--fw-600);
+            margin-left: var(--mg-0-5);
+        }
+    }
+    &__content{
+        margin-top: 3rem;
+        border: 1px solid red;
+        height: 25rem;
+        &__img{
+            width: 100%;
+        }
+    }
+}
