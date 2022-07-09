@@ -1,0 +1,43 @@
+@media screen and (min-width: 1000px) {
+    .container{
+        height: 100vh;
+        &__logo{
+            & i{
+                font-size: 1.5rem;
+            }
+            &__text{
+                font-size: var(--mg-2);
+                font-weight: var(--fw-600);
+            }
+        }
+        &__content{
+            display: flex;
+            justify-content: space-between; 
+            margin-inline: auto; 
+            width: 80vw;  
+            &__text{
+                text-align: left;
+                width: 40%;
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                position: relative;
+                height: 18rem;
+                &__title{
+                    font-size: var(--mg-2);
+                }
+                &__desc{
+                    width: 50ch;
+                    line-height: var(--mg-1-5);
+                }
+                &__social{
+                    position: absolute;
+                    inset: auto -1rem -12rem auto;
+                }
+            }
+            &__img{
+                width: 35rem;
+            }
+        }
+    }
+}

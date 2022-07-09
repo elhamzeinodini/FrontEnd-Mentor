@@ -5,6 +5,7 @@
     color: var(--white);
     padding: var(--mg-1-5);
     &__logo{
+        cursor: pointer;
         display: flex;
         align-items: center;
         &__text{
@@ -29,7 +30,7 @@
             }
             &__desc{
                 font-family: var(--font-primary);
-                max-width: 25ch;
+                width: 25ch;
             }
             &__btn{
                 all: unset;
@@ -59,6 +60,12 @@
                     justify-content: center;
                     align-items: center;
                     cursor: pointer;
+                    &:hover{
+                        border-color: var(--soft-magneta);
+                        & i{
+                            color: var(--soft-magneta);
+                        }
+                    }
                 }
             }
         }
