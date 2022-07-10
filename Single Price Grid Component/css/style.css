@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  background-color: var(--light-gray);
+}
+
+.card {
+  width: 300px;
+  margin-inline: auto;
+  margin-block: var(--mg-2);
+  border-radius: 0.2rem;
+}
+.card__top {
+  background-color: var(--white);
+  width: 100%;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: var(--mg-1);
+}
+.card__top__title {
+  color: var(--cyan);
+  font-weight: var(--fw-700);
+}
+.card__top__sub {
+  color: var(--bright-yellow);
+}
+.card__top__desc {
+  color: var(--grayish-blue);
+  width: 29ch;
+  line-height: var(--mg-1-5);
+}
+.card__middle {
+  background-color: var(--cyan);
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: var(--mg-1);
+  color: var(--white);
+}
+.card__middle__title {
+  font-weight: var(--fw-700);
+}
+.card__middle__price {
+  display: flex;
+  align-items: center;
+}
+.card__middle__price__left {
+  font-weight: var(--fw-700);
+  font-size: var(--mg-2);
+}
+.card__middle__price__right {
+  opacity: 70%;
+  margin-left: var(--mg-1);
+}
+.card__middle__btn {
+  all: unset;
+  padding: var(--mg-1) var(--mg-2);
+  background-color: var(--bright-yellow);
+  text-align: center;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.card__bottom {
+  width: 100%;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: var(--mg-1);
+  background-color: var(--cyan);
+  opacity: 70%;
+  color: var(--white);
+}
+.card__bottom__sub {
+  opacity: 70%;
+  line-height: var(--mg-1-5);
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --white: #fff;
+  --fw-400: 400;
+  --fw-700: 700;
+  --font-family: "Karla", sans-serif;
+  --mg-0-5: .5rem;
+  --mg-1: 1rem;
+  --mg-1-5: 1.5rem;
+  --mg-2: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

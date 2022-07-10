@@ -1,0 +1,68 @@
+.card{
+    @mixin card($height) {
+        width: 100%;
+        height: $height;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: var(--mg-1);
+    }
+    width: 300px;
+    margin-inline: auto;
+    margin-block: var(--mg-2);
+    border-radius: .2rem;
+    &__top{
+        background-color: var(--white);
+        @include card(18rem);
+        &__title{
+            color: var(--cyan);
+            font-weight: var(--fw-700);
+        }
+        &__sub{
+            color: var(--bright-yellow);
+        }
+        &__desc{
+            color: var(--grayish-blue);
+            width: 29ch;
+            line-height: var(--mg-1-5);
+        }
+    }
+    &__middle{
+        background-color: var(--cyan);
+        @include card(15rem);
+        color: var(--white);
+        &__title{
+            font-weight: var(--fw-700);
+        }
+        &__price{
+            display: flex;
+            align-items: center;
+            &__left{
+                font-weight: var(--fw-700);
+                font-size: var(--mg-2);
+            }
+            &__right{
+                opacity: 70%;
+                margin-left: var(--mg-1);
+            }
+        }
+        &__btn{
+            all: unset;
+            padding: var(--mg-1) var(--mg-2);
+            background-color: var(--bright-yellow);
+            text-align: center;
+            border-radius: .2rem;
+            cursor: pointer;
+        }
+    }
+    &__bottom{
+        @include card(16rem);
+        background-color: var(--cyan);
+        opacity: 70%;
+        color: var(--white);
+        &__sub{
+            opacity: 70%;
+            line-height: var(--mg-1-5);
+        }
+    }
+}
