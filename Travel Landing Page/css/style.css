@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--black);
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+:root {
+  --black: #000;
+  --white:#fff;
+  --font-primary: "Poppins", sans-serif;
+  --orange: #FF4500;
+  --mg-0-5: .5rem;
+  --mg-1: 1rem;
+  --mg-2: 2rem;
+}
+
+.nav {
+  color: var(--white);
+  font-family: var(--font-primary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+}
+.nav__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 13rem;
+}
+.nav__logo__circle__first {
+  width: var(--mg-1);
+  height: var(--mg-1);
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  background-color: var(--white);
+  z-index: 3;
+}
+.nav__logo__circle__second {
+  width: var(--mg-1);
+  height: var(--mg-1);
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: var(--orange);
+  transform: translateX(-1rem);
+  z-index: 1;
+}
+.nav__menu {
+  display: flex;
+}
+.nav__link {
+  padding: var(--mg-0-5);
+  color: var(--white);
+  position: relative;
+}
+.nav__link::after {
+  content: "";
+  width: var(--mg-1);
+  height: 1px;
+  background-color: var(--orange);
+  transition: 0.4s;
+  position: absolute;
+  inset: auto auto 0 var(--mg-0-5);
+  display: none;
+}
+.nav__link:hover::after {
+  display: block;
+}
+.nav__right {
+  display: flex;
+  width: 16rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__icons__bell {
+  position: relative;
+  margin-left: var(--mg-0-5);
+}
+.nav__icons__bell::after {
+  content: "";
+  position: absolute;
+  inset: 0 0.2rem auto auto;
+  background-color: var(--orange);
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.nav__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--orange);
+  width: 5rem;
+  height: 2rem;
+  border-radius: var(--mg-0-5);
+}
+.nav__button__icon {
+  background-color: var(--black);
+  padding: 0 0.4rem;
+  border-radius: 0.4rem;
+  margin-left: var(--mg-0-5);
+}
+.nav__button i {
+  font-size: 1rem;
+}
+.nav__profile {
+  display: flex;
+  align-items: center;
+}
+.nav__profile__img {
+  width: var(--mg-2);
+  height: var(--mg-2);
+  border-radius: 50%;
+  margin-right: var(--mg-0-5);
+}
+
+/*# sourceMappingURL=style.css.map */
