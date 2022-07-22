@@ -1,0 +1,44 @@
+.hero{
+  &__img{
+    &__svg{
+      width: 100%;
+    }
+  }
+  &__content{
+    padding: .5rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 20rem;
+    text-align: center;
+    &__text{
+      color: var(--black);
+      opacity: 90%;
+      line-height: 1.5rem;
+    }
+    &__btn{
+      all: unset;
+      padding: .75rem 1.5rem;
+      background-color: var(--black);
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--white);
+      border-radius: .5rem;
+    }
+    &__logo{
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2rem 0;
+      &__svg{
+        width: 4rem;
+        &--sec{
+          width: 2.5rem;
+        }
+      }
+    }
+  }
+}
